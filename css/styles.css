@@ -272,7 +272,7 @@ section {
     color: var(--color-light);
 }
 
-a:hover{
+.topo a:hover{
     background-color: transparent;
     color: var(--color-light);
 }
