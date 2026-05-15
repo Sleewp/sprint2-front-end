@@ -1,1 +1,1 @@
-# sprint2-front-end
+# SPRINT 2 - FRONT-END
