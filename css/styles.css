@@ -8,8 +8,6 @@
 :root {
     --color-light: #f4f4f4;
     --color-blue-dark: #1f2a44;;
-    --color-purple-main: #753cba;
-    --color-purple-light: #efe4ff;
     --color-blue: #4186ff;
     --spacing-sm: 10px;
     --spacing-md: 20px;
@@ -36,15 +34,13 @@ a:hover {
 }
 
 .hero {
-    height: 100vh;
-    background-image: linear-gradient(to top, rgba(43, 40, 40, 0.8),rgba(71, 68, 68, 0.4)),
-    url(../image/fundo.jpg);
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(71, 68, 68, 0.4)),
+    url(../image/imagem\ fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    color: var(--color-light);
-    padding-inline: var(--spacing-md);
-    text-align: center;
+    padding-left: 20px;
 }
 
 .header-hero {
@@ -55,6 +51,7 @@ a:hover {
     justify-content: space-between;
 }
 
+
 .menu-list {
     display: flex;
     gap: var(--spacing-md);
@@ -62,65 +59,77 @@ a:hover {
 
 
 .cta {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
-    bottom: 50px;
-    position: relative;
-    gap: var(--spacing-md);
-    color: var(--color-blue-dark);
-    text-align: center;
+    gap: 60px;
+    padding: 40px 80px;
 }
 
 .texto{
+    width: 82%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .texto h2 {
-    width: 75%;
-    max-width: 900px;
-    font-size: 10px;
-    text-align: center;
+    color: var(--color-blue-dark);
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    line-height: 0.95;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    text-wrap: balance;
 }
 
 .texto p{
-    text-align: justify;
-}
-
-.imagem {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    text-align: right;
-    top: 20px;
-    position: relative;
-}
-
-.imagem img{
-    width: 450px;
-    max-width: 250%;
-}
-.cta h2 {
-    font-size: 50px;
-    line-height: 1.1;
-    font-weight: 800;    
-    text-align: left;
-    margin-bottom: 25px;
-    max-width: 900px;
-    width: 200%;
-    text-wrap: balance;
-}
-
-.cta p {
-    width: 100%;
+    font-size: 17px;
     line-height: 1.7;
-    text-align: center;
-    font-size: 18px;
+    color: var(--color-light);
+    margin-bottom: 40px;
+    max-width: 1000px;
+    text-align: left;
     text-wrap: balance;
-    padding: 45px;
+}
+
+
+.features{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+}
+
+.features:hover{
+    transform: translateY(-8px);
+    
+}
+.feature-box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-box span{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.feature-box p{
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: left;
 }
 
 
@@ -177,6 +186,7 @@ a:hover {
     box-shadow: 0 15px 40px rgba(0,0,0,0.25);
     backdrop-filter: blur(10px);
     transition: .4s;
+    
 }
 
 .card:hover{
@@ -215,6 +225,7 @@ a:hover {
     background: #081325;
     color: white;
     padding: 70px 80px;
+    
 }
 
 .titulo-f{
@@ -257,7 +268,13 @@ a:hover {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
+}
+.topo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    grid-column: 1 / -1;
 }
 
 .topo a{
